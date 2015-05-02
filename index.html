@@ -17,18 +17,9 @@
       <div class="container">
         <div class="content">
           <div ng-repeat="show in shows">
-            <h2>{{ show.series }}</h2>
             <div class="rank">{{$index + 1}}</div>
+            <tv-show info="show"></tv-show>
           </div>
-          
-          <!--
-          TODO: Loop through shows and display each one with this HTML
-          <div>
-            <div class="rank">{{$index + 1}}</div>
-            
-            </div>
-          -->
-
         </div>
       </div>
     </div>
@@ -40,7 +31,7 @@
     <script src="js/controllers/MainController.js"></script>
 
     <!-- Directives -->
-    
+    <script src="js/directives/tvShow.js"></script>
 
     <!-- Services -->
     <script src="js/services/shows.js"></script>    
